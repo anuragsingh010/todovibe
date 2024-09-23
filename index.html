@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoVibe </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <br>Welcome<br/>
+            this is your <span class="todo-title">TodoVibe</span>
+        </h1>
+        <button id="dark-mode-toggle">🌚 Dark Mode</button>
+    </header>
+    
+    
+    <main>
+        <form id="todo-form" class="todo-form">
+            <input type="text" id="todo-input" class="todo-input" placeholder="Enter your todo here..." autocomplete="off" />
+            <select id="priority-select" class="priority-select">
+                <option value="low">Low Priority</option>
+                <option value="medium">Medium Priority</option>
+                <option value="high">High Priority</option>
+            </select>
+            <button type="submit" class="btn-add">Add Task</button>
+        </form>
+
+        <input type="text" id="search-input" class="search-input" placeholder="Search tasks..." />
+
+        <!-- Search Suggestions List -->
+        <ul id="suggestions-list" class="suggestions"></ul>
+
+        <ul id="todo-list" class="todo-list"></ul>
+    </main>
+    
+    <footer>
+        <p>Developed by Anurag Singh ©2024</p>
+    </footer>
+</body>
+</html>
